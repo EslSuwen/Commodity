@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB49CCC0-79D2-4812-8DEF-AAEE05BB9281}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Commodity</RootNamespace>
+    <AssemblyName>Commodity</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Brand\AddBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand\AddBrand.Designer.cs">
+      <DependentUpon>AddBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\brandshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand\brandshow.Designer.cs">
+      <DependentUpon>brandshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\DetailsBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand\DetailsBrand.Designer.cs">
+      <DependentUpon>DetailsBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\UpdateBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand\UpdateBrand.Designer.cs">
+      <DependentUpon>UpdateBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commodity\AddCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commodity\AddCommodity.Designer.cs">
+      <DependentUpon>AddCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commodity\DetailsCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commodity\DetailsCommodity.Designer.cs">
+      <DependentUpon>DetailsCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\DerailsOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\DerailsOrder.Designer.cs">
+      <DependentUpon>DerailsOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ShowOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\ShowOrder.Designer.cs">
+      <DependentUpon>ShowOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\UpdateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\UpdateOrder.Designer.cs">
+      <DependentUpon>UpdateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commodity\shangping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commodity\shangping.Designer.cs">
+      <DependentUpon>shangping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commodity\UpdateCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commodity\UpdateCommodity.Designer.cs">
+      <DependentUpon>UpdateCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\AddSupplier.Designer.cs">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\DetailsSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\DetailsSupplier.Designer.cs">
+      <DependentUpon>DetailsSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\ShowSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\ShowSupplier.Designer.cs">
+      <DependentUpon>ShowSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\UpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\UpdateSupplier.Designer.cs">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Type\AddType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type\AddType.Designer.cs">
+      <DependentUpon>AddType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Type\DetailsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type\DetailsType.Designer.cs">
+      <DependentUpon>DetailsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Type\ShowType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type\ShowType.Designer.cs">
+      <DependentUpon>ShowType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Type\UpdateType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type\UpdateType.Designer.cs">
+      <DependentUpon>UpdateType.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Brand\AddBrand.resx">
+      <DependentUpon>AddBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\brandshow.resx">
+      <DependentUpon>brandshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\DetailsBrand.resx">
+      <DependentUpon>DetailsBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\UpdateBrand.resx">
+      <DependentUpon>UpdateBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commodity\AddCommodity.resx">
+      <DependentUpon>AddCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commodity\DetailsCommodity.resx">
+      <DependentUpon>DetailsCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\DerailsOrder.resx">
+      <DependentUpon>DerailsOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ShowOrder.resx">
+      <DependentUpon>ShowOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\UpdateOrder.resx">
+      <DependentUpon>UpdateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Commodity\shangping.resx">
+      <DependentUpon>shangping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commodity\UpdateCommodity.resx">
+      <DependentUpon>UpdateCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\AddSupplier.resx">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\DetailsSupplier.resx">
+      <DependentUpon>DetailsSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\ShowSupplier.resx">
+      <DependentUpon>ShowSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\UpdateSupplier.resx">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Type\AddType.resx">
+      <DependentUpon>AddType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Type\DetailsType.resx">
+      <DependentUpon>DetailsType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Type\ShowType.resx">
+      <DependentUpon>ShowType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Type\UpdateType.resx">
+      <DependentUpon>UpdateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
